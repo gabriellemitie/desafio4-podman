@@ -1,0 +1,22 @@
+version: '2.27'
+services:
+  web: #container aplicacao
+    image: desafio4
+    ports:
+      - "8000:5000"
+    networks:
+      - desafio4compose
+  redis: #container redis
+    image: redis:latest
+    ports:
+      - '6379:6379'
+    networks:
+      - desafio4compose
+
+    volumes: 
+      - ./cache:/data
+volumes:
+  cache:
+    driver: local
+networks:
+  desafio4compose:
