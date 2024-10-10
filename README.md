@@ -1,4 +1,4 @@
-#Observações desafio 4 - Docker Compose 
+# Observações desafio 4 - Docker Compose 
 
 1. No arquivo Dockerfile    
 Comentar a linha de código  
